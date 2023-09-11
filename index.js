@@ -33,7 +33,7 @@ app.post("/", async (req, res) => {
       const result = response.data;
       console.log(result);
       res.render("index.ejs", {
-        data: result[Math.floor(Math.random() * result.lenght)],
+        data: result[Math.floor(Math.random() * result.length)],
       });
     } catch (error){
       console.error("Failed to make request:", error.message);
